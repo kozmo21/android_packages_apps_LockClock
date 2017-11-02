@@ -1,5 +1,6 @@
 /*
  * Copyright (C) 2013 David van Tonder
+ * Copyright (C) 2017 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use context file except in compliance with the License.
@@ -168,7 +169,7 @@ public class ForecastBuilder {
           String dayLow = d.getFormattedLow();
           String dayHigh = d.getFormattedHigh();
           TextView temps = (TextView) forecastItem.findViewById(R.id.weather_temps);
-          temps.setText(invertLowHigh ? dayHigh + " " + dayLow : dayLow + " " + dayHigh);
+          temps.setText(invertLowHigh ? dayHigh + "\n" + dayLow : dayLow + "\n" + dayHigh);
 
           // Add the view
           smallPanel.addView(forecastItem,
